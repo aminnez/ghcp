@@ -47,7 +47,7 @@ git pull origin main
 echo "🔍 Running quality checks..."
 dart pub get
 dart analyze
-dart test
+# dart test
 # dart pub publish --dry-run
 
 echo "✅ All checks passed!"

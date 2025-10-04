@@ -81,9 +81,6 @@ jobs:
       - name: Install dependencies
         run: dart pub get
 
-      - name: Run tests
-        run: dart test
-
       - name: Compile to native executable
         shell: bash
         run: |

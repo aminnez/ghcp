@@ -40,11 +40,11 @@ jobs:
             target: aarch64-apple-darwin
           - os: linux
             arch: x64
-            runner: ubuntu-20.04
+            runner: ubuntu-latest
             target: x86_64-linux-gnu
           - os: linux
             arch: arm64
-            runner: ubuntu-20.04
+            runner: ubuntu-latest
             target: aarch64-linux-gnu
             cross-compile: true
           - os: windows

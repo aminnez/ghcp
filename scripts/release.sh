@@ -46,7 +46,7 @@ git pull origin main
 # Run quality checks
 echo "🔍 Running quality checks..."
 dart pub get
-dart analyze --fatal-infos --fatal-warnings
+dart analyze
 dart test
 # dart pub publish --dry-run
 

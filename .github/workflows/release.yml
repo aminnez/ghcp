@@ -107,9 +107,9 @@ jobs:
         shell: bash
         run: |
           if [ "${{ matrix.os }}" = "windows" ]; then
-            ./release-artifacts/${{ matrix.os }}-${{ matrix.arch }}/${{ env.EXECUTABLE_NAME }}.exe --version
+            ./release-artifacts/${{ matrix.os }}-${{ matrix.arch }}/${{ env.EXECUTABLE_NAME }}.exe --help
           else
-            ./release-artifacts/${{ matrix.os }}-${{ matrix.arch }}/${{ env.EXECUTABLE_NAME }} --version
+            ./release-artifacts/${{ matrix.os }}-${{ matrix.arch }}/${{ env.EXECUTABLE_NAME }} --help
           fi
 
       - name: Get version

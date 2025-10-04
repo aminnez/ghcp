@@ -1,8 +1,8 @@
 # GitHub Content Downloader (ghcp)
 
-[![License](https://img.shields.io/github/license/aminnez/ghcp?style=flat-square&label=License)](https://opensource.org/licenses/MIT) ![GitHub top language](https://img.shields.io/github/languages/top/aminnez/ghcp?style=flat-square&label=Top%20Language&logo=dart) ![CLI Tool](https://img.shields.io/badge/Type-CLI%20Tool-FF6B6B?style=flat-square&logo=terminal&logoColor=white)
+[![License](https://img.shields.io/github/license/aminnez/ghcp?style=flat-square&label=License&color=green)](https://opensource.org/licenses/MIT) ![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?logo=dart&logoColor=white) ![CLI Tool](https://img.shields.io/badge/Type-CLI%20Tool-FF6B6B?style=flat-square&logo=terminal&logoColor=white)
 
-[![Pub Version](https://img.shields.io/pub/v/ghcp.svg?style=flat-square&label=Pub%20Version)](https://pub.dev/packages/ghcp) [![Pub Publisher](https://img.shields.io/pub/publisher/ghcp?style=flat-square&label=Pub%20Publisher)](https://pub.dev/publishers/aminnez.com) [![GitHub Release](https://img.shields.io/github/v/release/aminnez/ghcp?style=flat-square&label=Latest%20Release)](https://github.com/aminnez/ghcp/releases)
+[![Pub Version](https://img.shields.io/pub/v/ghcp.svg?style=flat-square&label=Pub%20Version)](https://pub.dev/packages/ghcp) [![Pub Publisher](https://img.shields.io/pub/publisher/ghcp?style=flat-square&label=Pub%20Publisher&color=blue)](https://pub.dev/publishers/aminnez.com) [![GitHub Release](https://img.shields.io/github/v/release/aminnez/ghcp?style=flat-square&label=Latest%20Release)](https://github.com/aminnez/ghcp/releases)
 
 ![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white) ![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0) ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 

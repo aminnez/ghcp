@@ -114,6 +114,7 @@ jobs:
 
       - name: Get version
         id: get_version
+        shell: bash
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             VERSION="${{ github.event.inputs.version }}"
@@ -144,6 +145,8 @@ jobs:
           cd release-artifacts
           if [ "${{ matrix.os }}" = "windows" ]; then
             sha256sum ${{ env.PROJECT_NAME }}-${VERSION}-${{ matrix.os }}-${{ matrix.arch }}.zip > ${{ env.PROJECT_NAME }}-${VERSION}-${{ matrix.os }}-${{ matrix.arch }}.sha256
+          elif [ "${{ matrix.os }}" = "macos" ]; then
+            shasum -a 256 ${{ env.PROJECT_NAME }}-${VERSION}-${{ matrix.os }}-${{ matrix.arch }}.tar.gz > ${{ env.PROJECT_NAME }}-${VERSION}-${{ matrix.os }}-${{ matrix.arch }}.sha256
           else
             sha256sum ${{ env.PROJECT_NAME }}-${VERSION}-${{ matrix.os }}-${{ matrix.arch }}.tar.gz > ${{ env.PROJECT_NAME }}-${VERSION}-${{ matrix.os }}-${{ matrix.arch }}.sha256
           fi
@@ -161,6 +164,7 @@ jobs:
           compression-level: 0
       - name: Build Summary with Artifact Links
         if: always() # Run even if some steps fail
+        shell: bash
         run: |
           VERSION="${{ steps.get_version.outputs.version }}"
           echo "### 🏗 Build Artifacts for $VERSION" >> $GITHUB_STEP_SUMMARY
@@ -195,6 +199,7 @@ jobs:
 
       - name: Get version
         id: get_version
+        shell: bash
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             VERSION="${{ github.event.inputs.version }}"

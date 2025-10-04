@@ -1,0 +1,16 @@
+# Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+coverage/
+bin/*.exe
+
+
+# IDE specific ignores
+.idea/
+.vscode/
+
+# OS specific ignores
+.DS_Store
+Thumbs.db
